@@ -5,6 +5,9 @@
 
 This Checkers Game web application provides a platform for users to play checkers in single and two player mode, view game rules, check leaderboards. It includes a login system for user authentication. This was developed as a project for the CSCI 130 - Web Programming class at CSU-Fresno. -This is the first version of the game- 
 
+
+
+
 ## Important Links
 
 - Figma Prototype: https://www.figma.com/proto/BB8WiVSJU1vUddbsIAmmqa/checkersGame?type=design&node-id=7-129&t=xfDcvKI1VORfENGL-0&scaling=contain&page-id=0%3A1&starting-point-node-id=7%3A129 
