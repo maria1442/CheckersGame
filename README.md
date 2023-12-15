@@ -16,7 +16,7 @@ This Checkers Game web application provides a platform for users to play checker
 | Team Member | Role |
 ---|---
 | Hue Vue | Backend Developer|
-| Maria Tomaz | FrontEnd Developer |
+| Maria Tomaz | FrontEnd Developer / UX/UI |
 
 
 ## Installation and Prerequisites
