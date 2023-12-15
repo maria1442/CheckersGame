@@ -1,0 +1,57 @@
+----------- HUE VANG
+
+
+October
+* Worked on the checker's logic
+* Created HTML pages (main page & others)
+
+
+November
+* Worked on the backend using PHP for the checker's games
+   * Got information such as (username) for the MySQL database
+   * Sent the information of player 1 to the MySQL database to update
+
+
+December
+* When the user logs in their name is displayed in the player 1 section.
+* Created the leaderboard using HTML, CSS, javascript, and PHP
+   * Fetched information from the MySQL database to display on the leaderboard such as (ID, name, games won, latest win time, and total games played)
+* Added styling to all the web pages such as (game pages, main page, and leaderboard page)
+*worked on the README.md 
+
+
+
+
+
+---------- MARIA GUIMARAES DINIZ TOMAZ
+
+October 
+
+* Worked on the design and prototype of the game on figma, to leverage the user experience
+* Worked on the HTML and CSS to style the pages
+* Worked on the logic of the game and c Implemented the board using canvas with javascript
+*implemented the main.html pages (html and css)
+*implemented the game options and fresno state stayling 
+
+November
+
+* Worked on the fucntions for the game 
+`InitializeGameState`
+`DrawInitialPieces`
+`drawPiece` etc. 
+Event Handling Functions: `handleCanvasClick` and `handleSquareClick`
+
+*Created the login and signup pages (HTML and CSS)
+*Worked on the back end to connect the client side with the server side (php/mysql ). 
+*Created the tables and RDBMS for the game
+
+*Implemented the help.html, contact pages 
+
+December 
+
+*Worked on finishing the pages details and implementing the images and testing the game logic 
+*implemented drawarrows function to give hints for the game 
+*worked on the README.md 
+*worked on the files organization 
+
+

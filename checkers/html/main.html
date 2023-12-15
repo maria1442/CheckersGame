@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkers Game</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="script.js"></script>
+    <style>
+        .btn:hover{
+            background-color: #ffffff;
+            color: #B1102B;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <!--Nav Bar-->
+        <nav>
+
+            <div class="navbar">
+                <div class="logo-container">
+                    <img class="element" src="bb.png" alt="BBLogo">
+                </div>
+                <div class="auth-buttons">
+                    <a href="signUp.html" class="button1" id="signInForm" style=" font-family: Roboto-Medium, Helvetica;
+                    font-weight: 800px;
+                    padding: 10px 15px;
+                    margin: 5px;
+                    color:#B1102B;
+                    background-color: #ffffff;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    top: 20px;
+                    font-size: 16px;
+                    text-decoration: none;
+                    border: 2px solid #B1102B;
+                    ">Sign Up</a>
+
+
+
+                    <a href="login.html" class="button2" id="login" style="font-family: Roboto-Medium, Helvetica;
+                    font-weight: 500;
+                    padding: 10px 15px;
+                    margin: 5px;
+                    color: #ffffff;
+                    background-color: #B1102B;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    top: 20px;
+                    font-size: 16px;
+                    text-decoration: none;
+                    border: 2px solid #B1102B;
+                    transition: background-color 0.3s, color 0.3s; ">Log In</a>
+                   <!---->
+                </div>
+            </div>
+            <div class="box">
+                <div class="rectangle">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="help.html">How To Play</a></li>
+                        <li><a href="leaderboard.php">Leaderboard</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <!-- Game Instructions Box-->
+    <main>
+        <section class="game-intro">
+            <h1>The CheckersGame</h1>
+            <p>Are you ready to play? Choose Board size and click the button below to play and choose your favorite
+                rules</p>
+
+
+                <form action="game.php" method="get" onsubmit="return redirectToGame()">
+                       <input type="hidden" name="gameMode" value="<?php echo $gameMode; ?>">
+                       <input type="hidden" name="playerMode" value="<?php echo $playerMode; ?>">
+
+                       <!-- Rest of your form elements -->
+
+                       <label for="player1Name" style="color: #B1102B;">Player 1 Name:</label>
+                       <input type="text" name="player1Name" id="player1Name">
+
+                       <label for="gameMode" style="color: #B1102B;">Select Board Size:</label>
+                       <select name="gameMode" id="gameMode">
+                           <option value="8x8">8x8</option>
+                           <option value="10x10">10x10</option>
+                       </select>
+
+                       <label style="color: #B1102B;">Select Player Mode:</label>
+                       <input type="radio" name="playerMode" id="singlePlayer" value="singlePlayer" required>
+                       <label for="singlePlayer" style="color: green;">Single Player</label>
+
+                       <input type="radio" name="playerMode" id="multiPlayer" value="multiPlayer">
+                       <label for="multiPlayer" style="color: green;">Multiplayer</label>
+
+                       <!-- Player 2 name field (conditionally displayed based on playerMode) -->
+                       <div id="player2NameContainer">
+                           <label for="player2Name" style="color: #B1102B;">Player 2 Name:</label>
+                           <input type="text" name="player2Name" id="player2Name">
+                       </div>
+
+                       <input type="submit" class="actions" value="Start Game">
+
+                   </form>
+
+                   <!--
+                <div class="actions">
+                    <a href="game_ten.html" class="btn"> Play Now! </a>
+                </div>
+            -->
+            </div>
+        </section>
+        <section class="leaderboard">
+            <h2>LEADERBOARD</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Games Won</th>
+                        <th>Games Played</th>
+                        <th>Time Played</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>MariaTomaz</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>0min 58sec</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>MariaTomaz</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0min 58sec</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>MariaTomaz</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0min 58sec</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script>
+    // JavaScript to show/hide Player 2's name input based on player mode
+       const playerModeRadios = document.querySelectorAll('input[name="playerMode"]');
+       const player2NameContainer = document.getElementById('player2NameContainer');
+
+       playerModeRadios.forEach(radio => {
+           radio.addEventListener('change', () => {
+               player2NameContainer.style.display = radio.value === 'multiPlayer' ? 'block' : 'none';
+           });
+  
+        // Get the button by its ID
+        document.getElementById('signup2').addEventListener('click', function () {
+            // Redirect to the sign-up page
+            window.location.href = 'signUp_copy.html';
+        });
+
+        document.getElementById('login1').addEventListener('click', function () {
+            // Redirect to the sign-up page
+            window.location.href = 'login_copy.html';
+        });
+
+        document.getElementById('signup2').addEventListener('click', function () {
+            // Redirect to the sign-up page
+            window.location.href = 'signUp_copy.html';
+        });
+
+    });
+    /*
+    function redirectToGame() {
+        // Get the selected board size and player mode
+        const selectedBoardSize = document.getElementById('gameMode').value;
+        const selectedPlayerMode = document.querySelector('input[name="playerMode"]:checked').value;
+
+        // Redirect based on the selected board size and player mode
+        if (selectedBoardSize === '8x8' && selectedPlayerMode === 'singlePlayer') {
+            window.location.href = 'php/php/php/game_eight.php';
+        } else if (selectedBoardSize === '10x10') {
+            window.location.href = 'game_ten.php';
+        }
+
+        // Return false to prevent the form from submitting
+        return false;
+    }
+    */
+    function redirectToGame() {
+    // Get the selected board size, player mode, and player names
+    const selectedBoardSize = document.getElementById('gameMode').value;
+    const selectedPlayerMode = document.querySelector('input[name="playerMode"]:checked').value;
+    const player1Name = encodeURIComponent(document.getElementById('player1Name').value);
+    const player2Name = selectedPlayerMode === 'multiPlayer' ? encodeURIComponent(document.getElementById('player2Name').value) : '';
+
+    // Construct the query string
+    let queryString = `?player1Name=${player1Name}`;
+    if (player2Name) queryString += `&player2Name=${player2Name}`;
+
+    // Redirect based on the selected board size and player mode
+    if (selectedBoardSize === '8x8') {
+        window.location.href = `../php/game_eight.php${queryString}`;
+    } else if (selectedBoardSize === '10x10') {
+        window.location.href = `../php/game_ten.php${queryString}`;
+    }
+
+    // Return false to prevent the form from submitting
+    return false;
+}
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,1120 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto-Medium", Helvetica;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px; 
+    background-color: #13284C;
+    height:90px;
+       
+}
+
+.navbar img {
+    width: 182px;
+    height: 104px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    padding: 12px;
+  }
+
+.box .rectangle {
+    display: flex;
+    align-items: center; /* This will vertically center the contents */
+    justify-content: center; /* This will horizontally center the contents */
+    height: 50px; /* Make sure this height matches your design requirements */
+    background-color: #b1102b;
+}
+
+.box .rectangle ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* This will vertically center the list items if they have padding/margin */
+    justify-content: center; /* Horizontally centers the list items in the nav */
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+nav ul li a {
+    position: relative; /* Needed for absolute positioning of pseudo elements */
+    padding: 10px 15px;
+    color: white; /* Text color */
+    text-decoration: none; /* No underline by default */
+    display: block; /* Allows padding and custom interactions */
+    overflow: hidden; /* Ensures pseudo elements don't extend beyond the anchor */
+}
+
+.actions .btn {
+    display: inline-block;
+    background: #b1102b;
+    color: #ffffff;
+    padding: 0.5rem 1.6rem;
+    margin-top: 40px;
+    margin-left: 240px;
+    font-size: 34px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    height: 3px;
+    background-color: white; 
+    transition: right 0.4s ease-out, left 0.4s ease-out; 
+}
+
+nav ul li a:hover::after{
+    right: 0; /* Extend underline across the full width */
+}
+
+/* Apply this class in your HTML to the active navigation link */
+.active {
+    font-weight: bold; 
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.auth-buttons button:hover {
+    color: white; /* Text color on hover */
+    background-color: #B1102B; /* Background color on hover */
+}
+#dark-mode3 {
+    background-color: #B1102B; /* Dark Gray */
+    color: white;
+}
+main {
+    display: flex;
+    padding: 2rem;
+}
+
+.login-container {
+    max-width: 400px; /* Adjust the width as necessary */
+    padding: top 20;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+.login-container img {
+    width: 100%; /* Make the logo responsive */
+    max-width: 300px; /* Max width for the logo */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+.login-form input {
+    margin-bottom: 20px; /* Space between form items */
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+.login-form button {
+    background-color: #b1102b;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+
+.login-form button:hover {
+    background-color: #b1102b;
+    }
+
+
+.links {
+    font-size: 0.9em; /* Smaller font size for links */
+}
+
+.links a {
+    color: #D2232A; /* Use the same red as in the image */
+    text-decoration: none;
+}
+
+.links span {
+    color: #333; /* Dark grey color */
+}
+
+  
+
+.game-intro {
+width: 900px;
+height: 560px;
+border-radius: 16px;
+background: #13284C;
+}
+
+.leaderboard {
+  width: 700px;
+  height: auto; /* Adjust the height to be auto to accommodate content */
+  border-radius: 16px;
+  background: white;
+  border: 2px solid #13284C;
+  margin-left: 70px;
+  padding: 20px; /* Add some padding around the content */
+  box-sizing: border-box; /* Include padding and border in the box's dimensions */
+}
+
+
+  .leaderboard h2 {
+      height: 42px;
+      position: relative;
+      font-family: "Roboto-ExtraBold", Helvetica;
+      font-weight: 800;
+      color: #b1102b;
+      font-size: 36px;
+      letter-spacing: 0;
+      text-align: center;
+  }
+
+
+
+
+.game-intro h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto-Medium", Helvetica;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 76px; 
+    padding-top: 1.3em;
+    letter-spacing: 0.5px;
+}
+
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        border-radius: 16px; /* Added for rounded corners */
+}
+
+table th, table td {
+    text-align: center;
+    padding: 15px 0; /* Adjust the padding to match the design */
+
+}
+
+table thead th {
+    color: #13284C;
+
+
+}
+
+
+/* Additional styling for the rows to add space between them */
+table tbody tr {
+    color: white;
+    border: 8px solid; 
+    background-color: #13284C;   
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .counter {
+    width: 150px;
+    display: fixed;
+    gap: 20px;
+    background-color: #ecc59a;
+    padding: 10px 20px;
+    border: 1px solid #ecc59a; 
+    border-radius: 5px;
+  }
+  
+  
+  .next-player {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+  }
+  .occupied {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .occupied.whitePiece {
+    background-color: white;
+  }
+  
+  .occupied.blackPiece {
+    background-color: black;
+  }
+  
+  
+  .game {
+    background-color: #4c382e;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .game .row {
+    width: 100%;
+    height: 10%;
+    display: flex;
+  }
+  
+  .game .row .column {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .game .row .column .occupied {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+  }
+  
+  .game .row .column .occupied.blackPiece {
+    background-color: black;
+  }
+  
+  .game .row .column .occupied.whitePiece {
+    background-color: white;
+  }
+  
+  .game .row .column.whiteCase {
+    background-color: #4c382e;
+  }
+  
+  .game .row .column.blackCase {
+    background-color: #ecc59a;
+  }
+  
+  .readyToMove {
+    background-color: green;
+  }
+  
+  /* modal style */
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  button{
+      cursor: pointer;
+      outline: none;
+      border: none;
+  }
+  
+  body {
+      font-family: sans-serif;
+      position: relative;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #fff;
+      /* background-image: url(https://picsum.photos/1920/1080); */
+      background-size: cover;
+      width: 100vw;
+      height: 100vh;
+    }
+  
+    .modal {
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+  
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.15s ease-out;
+    }
+    
+    .effect{
+      visibility: visible;
+      opacity: 1;
+    }
+  
+    .modal-content {
+      position: fixed;
+      z-index: 2;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      background-color: #ecc59a;
+      border-radius: 20px;
+    }
+    
+    .modal-body {
+      padding: 5em;
+      color: black;
+    }
+  
+    .modal-body p{
+      text-align: center;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      color: black;
+    }
+  
+  .modalClose {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: none;
+      position: fixed;
+      width: 40px;
+      height: 40px;
+    }
+    .modalClose:before, .modalClose:after {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: #ecc59a;
+      border-radius: 4px;
+    }
+    .modalClose:before {
+      transform: rotate(45deg);
+    }
+    .modalClose:after {
+      transform: rotate(-45deg);
+    }
+  
+    .modal .btn-container{
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .modal .btn{
+      background-color: #4c382e;
+      color: white;
+      padding: 10px 40px;
+      border: 1px solid #4c382e;
+      border-radius: 5px;
+    }
+
+
+    /*OLDERRRRRR*/
+
+    body {
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f4f4;
+      }
+      
+     
+      .nav-links a.active {
+        font-weight: bold;
+        /* Make the text bold */
+        color: #b1102b;
+        /* Change text color */
+      }
+      
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      .navigation-bar {
+        background-color: #071c2b;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100px;
+      }
+      
+      .navigation-bar img {
+        width: 170px;
+        /* Set the width of the logo as desired */
+        height: auto;
+        /* Maintain aspect ratio */
+
+        /* Ensure the logo does not exceed the height of the navigation bar */
+        object-fit: contain;
+        /* Maintain aspect ratio and fit within the container */
+        padding: 5px 15px;
+      }
+
+      /* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+      
+      .button-toggle-theme {
+        padding: 10px 15px;
+        background-color: #b1102b;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+      }
+      
+      .nav-links a.active {
+        font-weight: bold;
+        /* Make the text bold */
+        color: #b1102b;
+        /* Change text color */
+      }
+      
+      /* direct children of flex containers */
+      .nav-buttons {
+        display: flex;
+        align-items: center;
+        position: fixed;
+      }
+      
+      .button1 {
+        padding: 5px 15px;
+        background-color: #ffffff;
+        color: #b1102b;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 200px;
+        position: fixed;
+        text-decoration: none;
+      }
+      
+      .button2 {
+        color: #ffffff;
+        padding: 4px 15px;
+        border: 1px solid #b1102b;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        position: fixed;
+        top: 20px;
+        right: 300px;
+        position: fixed;
+      }
+      
+      .second-navigation-bar {
+        background-color: #f2f2f2;
+        text-align: center;
+        font-size: 14px;
+        padding: 10px 0;
+        top: 10%;
+        width: 100%;
+        padding: 10px 20px;
+        justify-content: space-between;
+        position: fixed;
+      }
+      
+      .nav-links a {
+        margin: 0 20px;
+        text-decoration: none;
+        color: #333;
+        transition: color 0.3s, font-size 0.3s;
+      }
+      
+      .nav-links a:hover {
+        color: #b1102b;
+        /* Change color on hover */
+        font-size: 14px;
+        /* Increase font size on hover */
+      }
+      
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+      }
+      
+      .header-text {
+        max-width: 500px;
+      }
+      
+      .header-text h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+      
+      .description {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      
+      .header-image img {
+        align-items: center;
+        width: 400px;
+        height: 300px;
+      }
+      
+      /*----------------team page------------------*/
+      
+      /* Styles for the team page */
+      .team-container {
+        text-align: center;
+        margin: 50px auto;
+      }
+      
+      .team-title {
+        font-size: 36px;
+        font-weight: 700;
+        position: relative;
+      }
+      
+      .title-line {
+        width: 100px;
+        height: 2px;
+        background-color: #b1102b;
+        margin: 10px auto;
+      }
+      
+      .team-description {
+        font-family: "DM Sans", sans-serif;
+        font-size: 18px;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 10px 150px;
+      }
+      
+      .team-members {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .team-member {
+        margin: 0 20px;
+      }
+      
+      .team-member img {
+        width: 192px;
+        height: 242px;
+        flex-shrink: 0;
+        margin-bottom: 10px;
+      }
+      
+      .member-info h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #b1102b;
+      }
+      
+      .member-info p {
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        margin: 5px 0;
+      }
+      
+      
+      
+      /* Team Section Styling */
+      .team-section {
+        background: #fff;
+        padding: 60px 20px;
+        text-align: center;
+      }
+      
+      .team-section h3 {
+        margin-bottom: 40px;
+        font-size: 2em;
+      }
+      
+      .team-section .team-member {
+        margin: 0 15px;
+        display: inline-block;
+        width: 200px;
+      }
+      
+      .team-section .team-member img {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      
+      .team-section .team-member h3 {
+        margin-bottom: 5px;
+        font-size: 1.2em;
+        color: #333;
+      }
+      
+      .team-section .team-member p {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+      }
+      
+      /* Additional styles for logo and main image */
+      .header-logo {
+        text-align: center;
+        padding: 20px 0;
+      }
+      
+      .about-us {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .image-container1 {
+        width: 70%;
+        position: relative;
+      }
+      
+      .image-container2 {
+        width: 70%;
+        position: relative;
+      }
+      
+      .text-container {
+        width: 70%;
+        padding: 10px;
+        box-sizing: border-box;
+        /* Makes sure padding doesn't add to the width */
+      }
+      
+      .text-container h1 {
+        text-align: center;
+        color: #b1102b;
+        font-size: 48px;
+        /* The color of the 'ABOUT US' text */
+        margin-bottom: 0.5em;
+      }
+      
+      .text-container p {
+        text-align: center;
+        color: #333;
+      }
+      
+      /* Responsive Design - stack the image and text on smaller screens */
+      @media (max-width: 768px) {
+        .about-us {
+          flex-direction: column;
+        }
+      
+        .image-container,
+        .text-container {
+          width: 100%;
+        }
+      }
+      
+      
+        /* Toggle Theme Button */
+      .button-toggle-theme {
+        padding: 10px 15px;
+        background-color: #b1102b;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+      }
+      
+      
+      
+      /* Responsive Styles for Mobile */
+      @media (max-width: 768px) {
+        #petition-section {
+          flex-direction: column;
+        }
+      
+        .call-to-action,
+        .signatures-list {
+          flex-basis: 50%;
+        }
+      
+        .button-toggle-theme {
+          position: static;
+          display: block;
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+      
+      /* Responsive Design - stack the image and text on smaller screens */
+      @media (max-width: 768px) {
+        .about-us {
+          flex-direction: column;
+        }
+      
+        .image-container,
+        .text-container {
+          width: 100%;
+        }
+      }
+      
+      .header {
+        text-align: center;
+        padding: 20px;
+      }
+      
+      .video-section {
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .video-title {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #b1102b;
+      }
+      
+      .video-container {
+        width: 50%;
+        position: relative;
+        /* 16:9 aspect ratio */
+        padding-top: 450px;
+        margin-bottom: 10px;
+      }
+      
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .video-description {
+        max-width: 800px;
+        text-align: center;
+      }
+      
+      /* Dark Mode Styles */
+      .dark-mode {
+        background-color: #121212;
+        /* Dark background */
+        color: #e0e0e0;
+        /* Light text */
+      }
+      
+      .dark-mode .navigation-bar {
+        background-color: #1a1a1a;
+        /* Darker background for the navigation bar */
+        color: #e0e0e0;
+        /* Light text for better readability */
+      }
+      
+      .dark-mode .nav-links a {
+        color: #e0e0e0;
+        /* Light text links */
+      }
+      
+      .dark-mode .nav-links a:hover {
+        color: #b1102b;
+        /* Keep the hover effect color */
+      }
+      
+      .dark-mode .button1,
+      .dark-mode .button2,
+      .dark-mode .button {
+        background-color: #333;
+        /* Darker buttons */
+        color: #e0e0e0;
+        /* Light text on buttons */
+      }
+      
+      .dark-mode .second-navigation-bar {
+        background-color: #1a1a1a;
+        /* Darker background for secondary navigation */
+      }
+      
+      .dark-mode .header,
+      .dark-mode .team-container,
+      .dark-mode .welcome-section,
+      .dark-mode .team-section,
+      .dark-mode .about-us,
+      .dark-mode .video-section {
+        background-color: #1a1a1a;
+        /* Dark backgrounds for various sections */
+      }
+      
+      .dark-mode .member-info h3,
+      .dark-mode .team-section .team-member h3 {
+        color: #e0e0e0;
+        /* Light text for headings in the team section */
+      }
+      
+      .dark-mode .welcome-section .welcome-content {
+        background: #333;
+        /* Darker background for welcome content */
+      }
+      
+      .dark-mode .image-container:before {
+        background-color: rgba(0, 0, 0, 0.7);
+        /* Semi-transparent overlay for images */
+      }
+      
+      /* Dark mode styles for form */
+      .dark-mode #signPetitionForm {
+        background-color: #333;
+        /* Darker background for forms */
+      }
+      
+      .dark-mode input[type="text"] {
+        background-color: #1a1a1a;
+        /* Darker input fields */
+        color: #e0e0e0;
+        /* Light text for input */
+      }
+      
+      .dark-mode input[type="text"].invalid {
+        border-color: #ff5555;
+        /* Lighter red for invalid inputs */
+      }
+      
+      .dark-mode #signatures li {
+        background-color: #333;
+        /* Darker backgrounds for signature list */
+      }
+      
+      input:invalid {
+        border: 2px solid red;
+      }
+      
+      input:valid {
+        border: 2px solid green;
+      }
+      
+      .hero {
+        color: white;
+        text-align: center;
+        display: fixed;
+        align-items: center;
+        justify-content: space-around;
+        padding: 15rem 15rem;
+        background: #0f1a25; /* Or any other background styling */
+      }
+      
+      .hero h1 {
+        font-size: 3rem; /* Adjust the size to match your design */
+        margin-bottom: 0.5rem;
+      }
+      
+      .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      
+      .actions .btn {
+        display: inline-block;
+        background: #b1102b;
+        color: #ffffff;
+        padding: 0.75rem 1.5rem;
+        margin: 0.5rem;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      
+      .actions .btn:hover {
+        background: #cbcbcb;
+        color: #b1102b;
+      }
+      
+      .text-box {
+        color: white;
+        padding: 2rem;
+        border-radius: 8px;
+        border: px solid #0f1a25;
+        background: #0f1a25;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+      }
+      
+      @media (max-width: 600px) {
+        .hero-content {
+          max-width: 70%; /* Increase width percentage for smaller screens */
+          padding: 1.5rem; /* Adjust padding as needed */
+        }
+      
+        .hero h1 {
+          font-size: 2.5rem; /* Reduce font size for smaller screens */
+        }
+      
+        .hero p {
+          font-size: 1.2rem; /* Reduce font size for smaller screens */
+        }
+      
+        .hero-image {
+          width: 100%; /* Full width on smaller screens */
+          height: auto; /* Adjust height automatically */
+        }
+      }
+      
+      /* For mobile devices */
+      @media (max-width: 768px) {
+        .hero {
+          flex-direction: column; /* Stack elements vertically */
+        }
+      
+        .hero-content {
+          position: relative; /* Switch to normal flow on small screens */
+          max-width: 90%; /* Allow more width for text on small screens */
+          transform: none; /* Remove transform */
+          top: auto;
+          left: auto;
+        }
+      
+        .hero-image {
+          display: none; /* Hide the image on very small screens if desired */
+        }
+      
+        .actions .btn {
+          padding: 0.5rem 1rem; /* Adjust button padding on small screens */
+          margin: 0.25rem;
+        }
+      
+        .text-box {
+          padding: 2rem; /* Adjust text box padding on small screens */
+        }
+      }
+      
+      /* Styles for the team page */
+      .team-container {
+        text-align: center;
+        margin: 50px auto;
+      }
+      
+      .team-title {
+        font-size: 36px;
+        font-weight: 700;
+        position: relative;
+      }
+      
+      .title-line {
+        width: 100px;
+        height: 2px;
+        background-color: #52B858;
+        margin: 10px auto;
+      }
+      
+      .team-description {
+        font-family: "DM Sans", sans-serif;
+        font-size: 18px;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 10px 150px;
+      }
+      
+      .team-members {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .team-member {
+        margin: 0 20px;
+      }
+      
+      .team-member img {
+        width: 192px;
+        height: 242px;
+        flex-shrink: 0;
+        margin-bottom: 10px;
+      }
+      
+      .member-info h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #52B858;
+      }
+      
+      .member-info p {
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        margin: 5px 0;
+      }
+      
+      
