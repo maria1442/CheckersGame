@@ -36,7 +36,7 @@ This Checkers Game web application provides a platform for users to play checker
    -  Git repository, use `git clone <https://github.com/maria1442/CheckersGame.git>`.
 
 2. **Configure Web Server**:
-   - In XAMPP, set the project (checkersGame) folder  in the htdocs directory.
+   - In XAMPP, set the project (checkers) folder  in the htdocs directory.
    
 3. **Database Setup**:
    - Open the PHP file that establishes a database connection (`db_connection.php`), that will be found inside the  the `php`  directory.
