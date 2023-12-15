@@ -5,6 +5,7 @@
 
 This Checkers Game web application provides a platform for users to play checkers in single and two player mode, view game rules, check leaderboards. It includes a login system for user authentication. This was developed as a project for the CSCI 130 - Web Programming class at CSU-Fresno. -This is the first version of the game- 
 
+![]([https://github.com/Your_Repository_Name/Your_GIF_Name.gif](https://github.com/maria1442/CheckersGame/blob/main/Screen%20Recording%202023-12-14%20at%2011.45.17%20AM.mov))
 
 
 
