@@ -28,35 +28,77 @@
     }
 
     .button1 {
-      font-weight: 800px;
-      padding: 10px 15px;
-      margin: 5px;
-      color: #b1102b;
-      background-color: #ffffff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      top: 20px;
-      font-size: 16px;
-      text-decoration: none;
-      border: 2px solid #b1102b;
-    }
+            font-weight: 800px;
+            padding: 10px 15px;
+            margin: 5px;
+            color: #b1102b;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            top: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border: 2px solid #b1102b;
+            position: absolute;
+            right: 40px; /* Adjust this value as needed */
+            top: 20px;
+        }
 
-    .button2, .button3 {
-      font-family: Roboto-Medium, Helvetica;
-      font-weight: 500;
-      padding: 10px 15px;
-      margin: 5px;
-      color: #ffffff;
-      background-color: #b1102b;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-      text-decoration: none;
-      border: 2px solid #b1102b;
-      transition: background-color 0.3s, color 0.3s;
-    }
+        .button2{
+            font-family: Roboto-Medium, Helvetica;
+            font-weight: 500;
+            padding: 10px 15px;
+            margin: 5px;
+            color: #ffffff;
+            background-color: #b1102b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            border: 2px solid #b1102b;
+            transition: background-color 0.3s, color 0.3s;
+            position: absolute;
+            right: 145px; /* Adjust this value as needed */
+            top: 20px;
+        }
+
+        .button3 {
+            font-family: Roboto-Medium, Helvetica;
+            font-weight: 500;
+            padding: 10px 15px;
+            margin: 5px;
+            color: #ffffff;
+            background-color: #b1102b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            border: 2px solid #b1102b;
+            transition: background-color 0.3s, color 0.3s;
+        
+            
+        }
+
+        .user-info {
+    position: absolute;
+    top: 20px;
+    right: 40px; /* Adjust this value as needed */
+    display: flex;
+    align-items: center;
+ 
+         
+            gap: 15px;
+}
+
+.welcome-message {
+    margin-right: 10px; /* Adjust this value as needed */
+    margin: 0;
+            color: white;
+}
+
 
     </style>
 </head>
@@ -95,7 +137,7 @@
                         <li><a href="../php/main.php">Home</a></li>
                         <li><a href="../php/help.php" class="active">>How To Play</a></li>
                         <li><a href="../php/leaderboard.php">Leaderboard</a></li>
-                        <li><a href="../html/contact.php">Contact</a></li>
+                        <li><a href="../php/contact.php">Contact</a></li>
                     </ul>
                 </div>
             </div>

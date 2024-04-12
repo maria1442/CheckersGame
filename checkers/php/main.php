@@ -40,21 +40,11 @@ if ($user && password_verify($password, $user['password'])) {
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding-top: 15vh;
+            padding-top: 7vh;
 
         }
 
-        .user-info {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .welcome-message {
-            margin: 0;
-            color: white;
-        }
+       
 
         .button1 {
             font-weight: 800px;
@@ -69,9 +59,30 @@ if ($user && password_verify($password, $user['password'])) {
             font-size: 16px;
             text-decoration: none;
             border: 2px solid #b1102b;
+            position: absolute;
+            right: 40px; /* Adjust this value as needed */
+            top: 20px;
         }
 
-        .button2,
+        .button2{
+            font-family: Roboto-Medium, Helvetica;
+            font-weight: 500;
+            padding: 10px 15px;
+            margin: 5px;
+            color: #ffffff;
+            background-color: #b1102b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            border: 2px solid #b1102b;
+            transition: background-color 0.3s, color 0.3s;
+            position: absolute;
+            right: 145px; /* Adjust this value as needed */
+            top: 20px;
+        }
+
         .button3 {
             font-family: Roboto-Medium, Helvetica;
             font-weight: 500;
@@ -86,10 +97,30 @@ if ($user && password_verify($password, $user['password'])) {
             text-decoration: none;
             border: 2px solid #b1102b;
             transition: background-color 0.3s, color 0.3s;
+        
+            
         }
+
+        .user-info {
+    position: absolute;
+    top: 20px;
+    right: 40px; /* Adjust this value as needed */
+    display: flex;
+    align-items: center;
+ 
+         
+            gap: 15px;
+}
+
+.welcome-message {
+    margin-right: 10px; /* Adjust this value as needed */
+    margin: 0;
+            color: white;
+}
+
+       
     </style>
 </head>
-
 <body>
     <header>
 
@@ -115,7 +146,6 @@ if ($user && password_verify($password, $user['password'])) {
                     <?php endif; ?>
                 </div>
             </div>
-
 
             <div class="box">
                 <div class="rectangle">
@@ -152,12 +182,11 @@ if ($user && password_verify($password, $user['password'])) {
         if ($playerMode === 'single') {
             // Display single player configuration
             echo '<div id="onePlayerConfig" style="text-align: center; padding: 20px;">';
-            // ... (Add your single player configuration here)
             echo '</div>';
         } else if ($playerMode === 'multi') {
             // Display multi-player configuration
             echo '<div id="twoPlayerConfig" style="text-align: center; padding: 20px;">';
-            // ... (Add your multi-player configuration here)
+         
             echo '</div>';
         }
         ?>

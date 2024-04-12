@@ -91,9 +91,30 @@ $leaderboardResult = $conn->query($leaderboardQuery);
             font-size: 16px;
             text-decoration: none;
             border: 2px solid #b1102b;
+            position: absolute;
+            right: 40px; /* Adjust this value as needed */
+            top: 20px;
         }
 
-        .button2,
+        .button2{
+            font-family: Roboto-Medium, Helvetica;
+            font-weight: 500;
+            padding: 10px 15px;
+            margin: 5px;
+            color: #ffffff;
+            background-color: #b1102b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            border: 2px solid #b1102b;
+            transition: background-color 0.3s, color 0.3s;
+            position: absolute;
+            right: 145px; /* Adjust this value as needed */
+            top: 20px;
+        }
+
         .button3 {
             font-family: Roboto-Medium, Helvetica;
             font-weight: 500;
@@ -108,7 +129,27 @@ $leaderboardResult = $conn->query($leaderboardQuery);
             text-decoration: none;
             border: 2px solid #b1102b;
             transition: background-color 0.3s, color 0.3s;
+        
+            
         }
+
+        .user-info {
+    position: absolute;
+    top: 20px;
+    right: 40px; /* Adjust this value as needed */
+    display: flex;
+    align-items: center;
+ 
+         
+            gap: 15px;
+}
+
+.welcome-message {
+    margin-right: 10px; /* Adjust this value as needed */
+    margin: 0;
+            color: white;
+}
+
     </style>
 </head>
 
@@ -214,7 +255,7 @@ $leaderboardResult = $conn->query($leaderboardQuery);
                         <th>Match ID</th>
                         <th>Winner</th>
                         <th>Loser</th>
-                        <th>Win Time</th>
+                        <th>Total Game Time</th>
                     </tr>
                 </thead>
                 <tbody>
